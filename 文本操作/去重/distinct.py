@@ -3,6 +3,8 @@
 import os
 
 
+# 使用set去重，不能保证顺序不变
+# 源文件改名为：.bak
 def distinct_line(file_name):
     f = open(file_name, 'r',encoding="utf-8")
     lines = set([])
